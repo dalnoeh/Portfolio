@@ -1,0 +1,190 @@
+.top_text {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-size: 50px;
+    text-align: center;
+    color: #e0e0e0;
+    z-index: 1;
+}
+
+.second_text {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+#nav {
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 5px 50px 0 rgba(0, 0, 0, 0.20), 0 2px 30px 0 rgba(0, 0, 0, 0.20)!important;
+}
+
+#nav a {
+    z-index: 2;
+    float: left;
+    color: #1f1f1f;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+
+#nav a:hover {
+    /*    background-color: #9be0e8;*/
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.image_container {
+    overflow: hidden;
+}
+
+#top_content_image {
+    background-image: url(https://res.cloudinary.com/dalnoeh/image/upload/v1523428305/gradient_small.png);
+    overflow: hidden;
+    height: 300px;
+    width: 5760px;
+  left: 0px;
+    animation: slide 60s linear infinite;
+    z-index: 0;
+}
+
+#top_content {
+    margin-top: -220px;
+    z-index: 5;
+}
+
+.container {
+    z-index: 4;
+}
+
+.background_top {
+    background-color: #f4f4f4
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1920px, 0, 0);
+        
+    }
+}
+.content_img{
+    border-radius: 5px;
+    width: 600px;
+    margin-left: 50px;
+    
+}
+
+.content_img_sub_box{
+    margin-left: 45px;
+}
+
+.content_img_sub{
+  border-radius: 5px;
+    width: 145px;
+    margin-left: 50px;
+}
+
+.content_img_subsub{
+  border-radius: 5px;
+    width: 145px;
+    margin-left: 00px;
+}
+
+.content_sub_img{
+    border-radius: 5px;
+    width: 145px;
+    margin-left: 5px;
+}
+
+.content_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 35px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.content_box p {
+    padding-left: 30px;
+    color: #1f1f1f;
+}
+
+.bottomPadding{
+  margin-bottom: 5px;
+}
+
+.fade_me {
+  opacity: 0;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.modalImg {
+cursor: pointer;
+transition: 0.05s;
+}
+
+.modalImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+padding-bottom: 100px;
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 100%;
+max-width: 80%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content { 
+animation-name: zoom;
+animation-duration: 0.1s;
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 60px;
+right: 35px;
+color: #fff;
+font-size: 72px;
+font-weight: bold;
+transition: 0.0s;
+}
+
+.close:hover,
+.close:focus {
+color: #f5f5f5;
+text-decoration: none;
+cursor: pointer;
+}
